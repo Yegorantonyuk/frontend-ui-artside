@@ -3,7 +3,9 @@
 	"description": "Create a document using only HTML",
 	"author": "Constantine Genchevsky",
 	"version": "1.0.0",
-	"dependencies": {},
+	"dependencies": {
+		"normalize.css": "^8.0.0"
+	},
 	"devDependencies": {
 		"browser-sync": "2.24.7",
 		"htmlhint": "0.10.1"
