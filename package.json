@@ -3,12 +3,14 @@
 	"description": "Create a document using only HTML",
 	"author": "Constantine Genchevsky",
 	"version": "1.1.0",
-	"dependencies": {},
+	"dependencies": {
+		"normalize.css": "^8.0.0"
+	},
 	"devDependencies": {
-		"neutrino": "~8.3.0",
 		"@atomspace/stylelint": "~1.1.1",
-		"browser-sync": "2.24.7",
-		"htmlhint": "0.10.1"
+		"browser-sync": "^2.26.3",
+		"htmlhint": "0.10.1",
+		"neutrino": "~8.3.0"
 	},
 	"scripts": {
 		"start": "browser-sync start --server \"src\" --files \"src\" --open \"external\" --no-notify --no-ghost-mode",
