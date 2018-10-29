@@ -50,6 +50,25 @@ html {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
 	display: block;
 }
+
+@font-face{
+
+font-family: 'DINCyr';
+
+src: url('fonts/dincyr-regular.eot?iefix') format('embeddet-onetype'),
+
+	url('fonts/dincyr-regular.woff') format('truetype'),
+
+	url('fonts/dincyr-regular.otf') format('onetype'),
+
+	url('fonts/dincyr-regular.ttf') format('truetype');
+
+font-weight: normal;
+
+font-style: normal;
+
+}
+
 body {
 	font: 12px/18px Arial, sans-serif;
 	width: 100%;
@@ -68,10 +87,35 @@ body {
 /* Header
 -----------------------------------------------------------------------------*/
 .header {
+	display: block;
 	height: 200px;
-	background: #FFE680;
+	position: relative;
 }
-
+.header .logo{
+	display: block;
+	position: absolute;
+	top: 44px;
+	left: 0;
+}
+.header .logo img{
+	display: block;
+	width: 102px;
+	height: auto;
+}
+.header .phone{
+	position: absolute;
+	right: 0;
+	top: 58px;
+	font-size: 30px;
+	line-height: 26px;
+	text-decoration: none;
+	color: #707070;
+	font-family: "DINCyr", Arial, Helvetica, sans-serif
+}
+.header .phone-code{
+	display: block;
+	font-size: 18px;
+}
 
 /* Middle
 -----------------------------------------------------------------------------*/
