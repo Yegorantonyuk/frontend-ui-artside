@@ -137,7 +137,14 @@ body {
 .content {
 	padding: 0 0 0 270px;
 }
-
+h2 {
+	font-size: 18px;
+	line-height: 38px;
+}
+h1 {
+	font-size: 40px;
+	line-height: 38px;
+}
 
 /* Left Sidebar
 -----------------------------------------------------------------------------*/
