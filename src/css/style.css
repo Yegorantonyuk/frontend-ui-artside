@@ -167,7 +167,7 @@ h1 {
 	margin-left: -100%;
 	position: relative;
 	font-size: 40px;
-	line-height: 38px;
+	line-height: 43px;
 }
 
 .left-sidebar a{
@@ -175,6 +175,16 @@ h1 {
 	color: #363636;
 	font-family: "DINCyr", Arial, Helvetica, sans-serif;
 	text-transform: uppercase;
+    padding: 2px; /* Поля вокруг текста */
+   }
+.left-sidebar a:visited {
+    color: #363636; /* Цвет посещенной ссылки */
+   } 
+.left-sidebar a:hover {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: #fff; /* Цвет ссылки при наведении на нее курсора мыши */  
+    background: #707070; /* Цвет фона */
+   }
 }
 
 /* Footer
