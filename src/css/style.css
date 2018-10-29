@@ -152,11 +152,13 @@ h1 {
 	display:inline-block;
 	width: 200px;
 }
+
 .paragraph p{
 	margin-top: 0.5em; /* Отступ сверху */
 	margin-bottom: 1em; /* Отступ снизу */
 	font-family: "DINCyr", Arial, Helvetica, sans-serif;	
 }
+
 /* Left Sidebar
 -----------------------------------------------------------------------------*/
 .left-sidebar {
