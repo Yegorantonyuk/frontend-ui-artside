@@ -17,7 +17,7 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+	vertical-align: top;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -110,7 +110,7 @@ body {
 	line-height: 26px;
 	text-decoration: none;
 	color: #707070;
-	font-family: "DINCyr", Arial, Helvetica, sans-serif
+	font-family: "DINCyr", Arial, Helvetica, sans-serif;
 }
 .header .phone-code{
 	display: block;
@@ -136,16 +136,27 @@ body {
 }
 .content {
 	padding: 0 0 0 270px;
+	
 }
 h2 {
 	font-size: 18px;
 	line-height: 38px;
+	font-family: "DINCyr", Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
 }
 h1 {
 	font-size: 40px;
 	line-height: 38px;
 }
-
+.columns div{
+	display:inline-block;
+	width: 200px;
+}
+.paragraph p{
+	margin-top: 0.5em; /* Отступ сверху */
+	margin-bottom: 1em; /* Отступ снизу */
+	font-family: "DINCyr", Arial, Helvetica, sans-serif;	
+}
 /* Left Sidebar
 -----------------------------------------------------------------------------*/
 .left-sidebar {
@@ -153,8 +164,16 @@ h1 {
 	width: 250px;
 	margin-left: -100%;
 	position: relative;
+	font-size: 40px;
+	line-height: 38px;
 }
 
+.left-sidebar a{
+	text-decoration: none;
+	color: #363636;
+	font-family: "DINCyr", Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+}
 
 /* Footer
 -----------------------------------------------------------------------------*/
@@ -166,4 +185,19 @@ h1 {
 	position: relative;
 	border-top: 1px solid #707070;
 	border-color: rgba(0,0,0,0.3); 
+	font-family: "DINCyr", Arial, Helvetica, sans-serif;
+	color: #707070;
+	
+}
+
+.footer .copyright-info {
+	display:inline-block;
+	width: 100px;	
+}
+.footer .link-info{
+	display:inline-block;
+}
+.footer a{
+	text-decoration: none;
+	color: #707070;
 }
