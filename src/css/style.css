@@ -146,16 +146,17 @@ body {
 	width: 250px;
 	margin-left: -100%;
 	position: relative;
-	background: #B5E3FF;
 }
 
 
 /* Footer
 -----------------------------------------------------------------------------*/
 .footer {
+	display: block;
 	width: 1000px;
 	margin: -100px auto 0;
 	height: 100px;
-	background: #BFF08E;
 	position: relative;
+	border-top: 1px solid #707070;
+	border-color: rgba(0,0,0,0.3); 
 }
