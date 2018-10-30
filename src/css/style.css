@@ -175,15 +175,15 @@ h1 {
 	color: #363636;
 	font-family: "DINCyr", Arial, Helvetica, sans-serif;
 	text-transform: uppercase;
-    padding: 2px; /* Поля вокруг текста */
+    padding: 2px; 
    }
 .left-sidebar a:visited {
-    color: #363636; /* Цвет посещенной ссылки */
-   } 
+	color: #363636;
+}
 .left-sidebar a:hover {
-    text-decoration: none; /* Убираем подчеркивание */
-    color: #fff; /* Цвет ссылки при наведении на нее курсора мыши */  
-    background: #707070; /* Цвет фона */
+    text-decoration: none; 
+    color: #fff;   
+    background: #707070; 
    }
 }
 
@@ -198,8 +198,7 @@ h1 {
 	border-top: 1px solid #707070;
 	border-color: rgba(0,0,0,0.3); 
 	font-family: "DINCyr", Arial, Helvetica, sans-serif;
-	color: #707070;
-	
+	color: #707070;	
 }
 
 .footer .copyright-info {
