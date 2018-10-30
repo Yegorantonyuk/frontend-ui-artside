@@ -50,6 +50,9 @@ html {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
 	display: block;
 }
+strong{
+	color: #363636;
+}
 
 @font-face{
 
@@ -67,6 +70,13 @@ font-weight: normal;
 
 font-style: normal;
 
+}
+@font-face {
+  font-weight: normal;
+  font-family: "LightAlternate";
+  font-style: normal;
+
+  src: url("fonts/LightAlternateRegular.otf");
 }
 
 body {
@@ -110,8 +120,22 @@ body {
 	line-height: 26px;
 	text-decoration: none;
 	color: #707070;
-	font-family: "DINCyr", Arial, Helvetica, sans-serif;
+	font-family: "LightAlternate", "DINCyr", Arial, Helvetica, sans-serif;
 }
+a {
+    text-decoration: none;
+}
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
 .header .phone-code{
 	display: block;
 	font-size: 18px;
@@ -119,11 +143,11 @@ body {
 
 /* Middle
 -----------------------------------------------------------------------------*/
-.middle {
+/* .middle {
 	width: 100%;
 	padding: 0 0 100px;
 	position: relative;
-}
+} */
 .middle:after {
 	display: table;
 	clear: both;
@@ -136,13 +160,16 @@ body {
 }
 .content {
 	padding: 0 0 0 270px;
-	
+	padding-bottom: 55px;
+	border-bottom: 1px solid #b3a7a7;
+	border-color: rgba(0,0,0,0.3);
 }
 h2 {
 	font-size: 18px;
 	line-height: 38px;
 	font-family: "DINCyr", Arial, Helvetica, sans-serif;
 	text-transform: uppercase;
+	color:#707070;
 }
 h1 {
 	font-size: 40px;
@@ -160,23 +187,28 @@ h1 {
 	display:flex;
 	flex-direction: row;
 	justify-content: space-between;
-	/* position: relative;
-	padding-right: 150px; */
+	margin-top: 25px;
+	
 }
-/* .name {
-	display:flex;
-	flex-direction: row;
-	padding-right: 1000px;	
-} */
-.column div{
-	padding-left: 20px;
+
+.name{
+	margin-left: 10px;
+  padding-right: 10px;
+  color: #707070;
+  
+}
+ul{
+	width: 200px;
 }
 
 
 .paragraph p{
-	margin-top: 0.5em; /* Отступ сверху */
-	margin-bottom: 1em; /* Отступ снизу */
-	font-family: "DINCyr", Arial, Helvetica, sans-serif;	
+	/* margin-top: 0.1em; 
+	margin-bottom: 0.1em;  */
+	margin-block-start: 1em;
+    margin-block-end: 1em;
+	font-family: "DINCyr", Arial, Helvetica, sans-serif;
+	color: #363636;	
 }
 
 
@@ -211,15 +243,15 @@ h1 {
 /* Footer
 -----------------------------------------------------------------------------*/
 .footer {
-	display: block;
+	display: flex;
 	width: 1000px;
 	margin: -100px auto 0;
 	height: 100px;
-	position: relative;
-	border-top: 1px solid #707070;
-	border-color: rgba(0,0,0,0.3); 
+	position: relative; 
 	font-family: "DINCyr", Arial, Helvetica, sans-serif;
 	color: #707070;	
+	margin-top: 40px;
+	margin-bottom: 35px;
 }
 
 .footer .copyright-info {
