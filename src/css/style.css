@@ -148,16 +148,37 @@ h1 {
 	font-size: 40px;
 	line-height: 38px;
 }
-.columns div{
+.columns .column{
 	display:inline-block;
-	width: 200px;
+	position: relative; 
+	min-height: 5px;
+	width: 140px;
+	padding-right: 100px;
+	text-transform: none;
 }
+.column li{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	/* position: relative;
+	padding-right: 150px; */
+}
+/* .name {
+	display:flex;
+	flex-direction: row;
+	padding-right: 1000px;	
+} */
+.column div{
+	padding-left: 20px;
+}
+
 
 .paragraph p{
 	margin-top: 0.5em; /* Отступ сверху */
 	margin-bottom: 1em; /* Отступ снизу */
 	font-family: "DINCyr", Arial, Helvetica, sans-serif;	
 }
+
 
 /* Left Sidebar
 -----------------------------------------------------------------------------*/
